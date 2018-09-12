@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ccc;
+	font-family: "Kanit","Open Sans",sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+h1 {
+	color: #fff;
+	font-size: 40px;
+}
+
+.logo {
+	width: 62px;
+	height: 62px;
+	margin-top: 10px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.page {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sell {
+	display: flex;
+	flex-direction: row;
+	padding: 15% 5% 5% 5%;
+}
+
+#sell .col1 {
+	width: 50%;
+	border-right: 2px solid #fff;
+}
+
+#sell .col1 ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#sell .col1 ul li {
+	cursor: pointer;
+}
+
+#sell .col1 ul li:hover p {
+	opacity: 1;
+}
+
+#sell .col1 ul li p {
+	color: #fff;
+	text-transform: uppercase;
+	opacity: 0;
+	text-align: center;
+}
+
+#sell .col2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 80px 0;
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+#scene {
+	width: 100%;
+	margin: 0 auto;
+	top: 100px;
+	left: 12%;
+}
+
+#scene div img {
+	width: 80%;
+}
+
+.hero {
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+.shoeBox img {
+	width: 200px;
+	height: 300px;
+}
+
+.shoeBox img div {
+	transition: .3s;
+}
+
+.shoe-info {
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #fff;
+}
+
+.shoe-info h1 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.shoe-info h2 {
+	font-size: 4rem;
+}
+
+.shoe-info div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 15%;
+}
+
+.container ul {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#next, #prev {
+	position: fixed;
+	z-index: 9999999;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	transition: .3s;
+	font-size: 1.5rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+	color: #fff;
+	cursor: pointer;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#next {
+	right: 5%;
+}
+
+#prev {
+	left: 5%;
+}
+
+/*# sourceMappingURL=main.css.map */
