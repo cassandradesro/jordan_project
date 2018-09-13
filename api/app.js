@@ -58,13 +58,13 @@ app.post("/api/Upload", cpUpload, function(req, res) {
     shoe.style = req.body.style;
     shoe.condition = req.body.condition;
     shoe.startingbid = req.body.startingbid;
+    shoe.shoesize = req.body.shoesize;
     shoe.uploadedImage = '';
     if (req.files.imgUploader) {
         shoe.uploadedImage = req.files.imgUploader[0].path;
     }
     shoe.pickedImage = req.body.shoeImageSrc;
     shoe.messages = [];
-    shoe.shoesize = req.body.shoesize;
     console.log(shoe)
     shoes.push(shoe);
     res.send(shoe)

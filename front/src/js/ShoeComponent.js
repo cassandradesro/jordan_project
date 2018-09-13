@@ -9,8 +9,8 @@ let ShoeComponent = Vue.component("shoe", {
 				{{shoe.startingbid}}
 				{{shoe.shoesize}
 
-				<img v-if="shoe.uploadedImage" :src=" '//159.65.236.175:4792' + shoe.uploadedImage " alt="jordan shoes">
-				<img v-else-if="shoe.pickedImage" :src=" shoe.pickedImage " alt="jordan shoes">
+				<img v-if="shoe.uploadedImage" :src=" '//159.65.236.175:4792/' + shoe.uploadedImage " alt="jordan shoes">
+				<img v-else-if="shoe.pickedImage" :src="shoe.pickedImage " alt="jordan shoes">
 			</div>
 			<input v-model="newUsername" name="new-username" placeholder="Username">
 			<input v-model="newMessage" name="new-message" placeholder="Message">

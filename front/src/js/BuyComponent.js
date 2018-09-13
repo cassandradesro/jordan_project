@@ -6,19 +6,18 @@ var BuyComponent = Vue.component("buy", {
 		}
 	},
 	template: `
-	<div class="page" :style=" 'background-image:url(' + buy.heroBackground + ')' ">
+	<div id="buy" class="page" :style=" 'background-image:url(' + buy.heroBackground + ')' ">
 
 		<section class="container">
 			<h1>Buy Jordans</h1>
 			<ul class="shoeBox">
 				<router-link :to="'shoe/' + index" v-for="(shoe, index) in shoes">
-					<img v-if="shoe.uploadedImage" :src=" '//159.65.236.175:4792' + shoe.uploadedImage " alt="jordan shoes">
+					<img v-if="shoe.uploadedImage" :src=" '//159.65.236.175:4792/' + shoe.uploadedImage " alt="jordan shoes">
 					<img v-else-if="shoe.pickedImage" :src=" shoe.pickedImage " alt="jordan shoes">
 					<h1>{{shoe.style}}</h1>
 					<p>{{shoe.condition}}</p>
 					<p>{{shoe.startingbid}}</p>
 					<p>{{shoe.shoesize}}</p>
-
 				</router-link>
 			</ul>
 		</section>
