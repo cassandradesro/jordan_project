@@ -5,7 +5,6 @@ const router = new VueRouter({
 		{ path: '/', component: HomeComponent },
 		{ path: '/sell', component: SellComponent},
 		{ path: '/buy', component: BuyComponent },
-		{ path: '/trade', component: TradeComponent },
 		{ path: '/shoe/:id', component: ShoeComponent },
 	]
 });

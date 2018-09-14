@@ -3,7 +3,7 @@
 console.log('Hello World from main.js! Cassandra Final Node Project called "Jordan Lounge"');
 
 var router = new VueRouter({
-	routes: [{ path: '/', component: HomeComponent }, { path: '/sell', component: SellComponent }, { path: '/buy', component: BuyComponent }, { path: '/trade', component: TradeComponent }, { path: '/shoe/:id', component: ShoeComponent }]
+	routes: [{ path: '/', component: HomeComponent }, { path: '/sell', component: SellComponent }, { path: '/buy', component: BuyComponent }, { path: '/shoe/:id', component: ShoeComponent }]
 });
 
 var URL_BASE = "dist/img/";

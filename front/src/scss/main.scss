@@ -4,6 +4,8 @@ $breakpoint-mobile: 768px;
 
 @import 'reset';
 @import 'buy';
+@import 'shoepage';
+
 
 @import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600,700,800,900');
 
@@ -109,7 +111,7 @@ label{
     z-index: -1;
 }
 .inputfile + label {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 1.25rem;
     /* 20px */
     font-weight: 400;
@@ -177,12 +179,16 @@ input[type=submit]{
 	font-family: "Kanit", sans-serif;
 	font-size: 1rem;
 	border-radius: 3px;
+	margin-top: 20px;
 }
 form{
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: flex-start;
+	@media screen and (max-width: $breakpoint-mobile){
+		flex-direction: column;
+	}
 	input[type=text], select{
 		width: 80%;
 		line-height: 20px;
@@ -195,20 +201,21 @@ form{
 .col-container{
 	display: flex;
 	flex-direction: row;
+	align-items: space-between;
 	@media screen and (max-width: $breakpoint-mobile){
-		flex-direction: column-reverse;
+		flex-direction: column;
 		text-align: center;
 	}
-	.or{
-		font-size: 3rem;
-		color: #fff;
-		margin: 0 20px;
-		display: flex;
-		align-items: center;
-		@media screen and (max-width: $breakpoint-mobile){
-			justify-content: center;
-		}
-	}
+	// .or{
+	// 	font-size: 3rem;
+	// 	color: #fff;
+	// 	margin: 0 20px;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	@media screen and (max-width: $breakpoint-mobile){
+	// 		justify-content: center;
+	// 	}
+	// }
 	h2{
 		color: #fff;
 		font-size: 1.5rem;
@@ -220,9 +227,10 @@ form{
 		width: 50%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		@media screen and (max-width: $breakpoint-mobile){
 			width: 100%;
-	
+			
 			h2{
 				font-size: 1rem;
 			}
@@ -234,28 +242,28 @@ form{
 	}
 	
 	.col1{
-		ul{
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			li{
-				cursor: pointer;
-				margin: 10px;
-				&:hover{
-					p{
-						opacity: 1;
+		// ul{
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	flex-wrap: wrap;
+		// 	li{
+		// 		cursor: pointer;
+		// 		margin: 10px;
+		// 		&:hover{
+		// 			p{
+		// 				opacity: 1;
 					
-					}
-				}
-				p{
-					color: #fff;
-					text-transform: uppercase;
-					opacity: 0;
-					text-align: center;
-					margin-top: -50px;
-				}
-			}
-		}
+		// 			}
+		// 		}
+		// 		p{
+		// 			color: #fff;
+		// 			text-transform: uppercase;
+		// 			opacity: 0;
+		// 			text-align: center;
+		// 			margin-top: -50px;
+		// 		}
+		// 	}
+		// }
 	}
 
 }

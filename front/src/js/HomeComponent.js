@@ -60,7 +60,7 @@ var HomeComponent = Vue.component("home", {
 				<div class="box">
 					<h2>Trade</h2>
 					<p>Start the discussion to see what Jordan Lounge community members have that could be added to your collection. Chat and decide what to trade easily and openly. </p>
-					<router-link to="#">Live Chat</router-link>
+					<router-link to="#">Trade Jordans</router-link>
 
 				</div>	
 			</div>
